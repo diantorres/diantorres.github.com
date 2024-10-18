@@ -1,0 +1,377 @@
+<html>
+    <head>
+        <title>Tablas en html</title>
+        <link rel="stylesheet" href="../css/stylepage.css" type="text/css">
+        <style type="text/css">
+            #tabla1{
+                text-align: center;
+                margin: 0 auto;
+                color: #855E6E;
+                width: 700px;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 3px;
+            }
+            #tabla1 th{
+                background-color: #CE7095;
+                color: #F7F1E1;
+            }
+            #tabla1 td{
+                background-color: #FFDBD7;
+                border-radius: 3px;
+                margin: 10px;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 2px;
+            }
+            /*#tabla2 td{
+                color: #855E6E;
+                height: 25px;
+                padding: 8px;
+            }*/
+            .celda_derecha{
+                text-align: right;
+                padding: 0px;
+                background-color: #F7F1E1;
+            }
+            .tabla_dos{
+                width: 700px;
+                border-collapse: collapse;
+                border-style: dotted;
+                margin: 0 auto;
+                text-align: center;
+                
+            }
+            .tabla_dos td, .tabla_dos th{
+                width: 600px;
+                border-style: dotted;
+                border-color: #855E6E;
+                padding: 5px;
+            }
+            .tabla_dos th{
+                background-color: #855E6E;
+                color: #F7F1E1;
+            }
+            .tabla_dos td{
+                background-color: #FFDBD7;
+                color: #CE7095;
+            }
+            #tabla_zebra{
+                width: 100%;
+            }
+            #tabla_zebra tbody tr:nth-child(even) {
+                background-color: #FFDBD7;
+                color: #855E6E;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color: #CE7095;
+                color: #FFDBD7;
+            }
+            #tabla_zebra thead tr{
+                background-color: #855E6E;
+                color:#FFDBD7;
+            }
+            #tabla_zebra{
+                width: 800px;
+                border-style: groove;
+                border-collapse: collapse;
+                border-width: 2px;
+                margin: 0 auto;
+                text-align: center;
+                padding: 5px;
+            }
+            #tabla_zebra td, #tabla_zebra th {
+                border-style: solid
+            }
+            .tabla_hover{
+                width: 80%
+            }
+            .tabla_hover tr:hover{
+                color: #855E6E;
+                font-weight: bold;
+
+            }
+            .tabla_hover{
+                width: 800px;
+                border-style: solid;
+                margin: 0 auto;
+                text-align: center;
+                color: #CE7095;
+                border-width: 1px;
+            }
+            .tabla_hover tr th{
+                background-color: #CE7095;
+                color: #F7F1E1;
+                border-radius: 3px;
+            }
+            .tabla_hover tbody td{
+                border-radius: 3px;
+                background-color: #FFDBD7;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 1px;
+            }
+            .tabla_hover tbody tr td:hover{
+                background-color: #F7F1E1;
+            }
+            p{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>TABLAS EN HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Sobre mí</a></li>
+                <li><a href="listas.html">Favoritos</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="audio.html">Canciones</a></li>
+                <li><a href="video.html">Danza</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto">
+                <h2>Tabla datos</h2>
+                <p>
+                La siguiente tabla buscar recuperar datos para la investigación de la Facultad de Arquitectura en la BUAP. Son exclusivos para su uso dentro de la investigación por lo que se pide confidencialidad de estos. 
+                </p>
+                <table border="1" id="tabla1">
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202163113</td>
+                            <td>Diana Karen</td>
+                            <td>Torres</td>
+                            <td>Márquez</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                        <tr>
+                            <td>201907652</td>
+                            <td>Luis Gerardo</td>
+                            <td>Santos</td>
+                            <td>López</td>
+                            <td>Urbanismo</td>
+                        </tr>
+                        <tr>
+                            <td>202213248</td>
+                            <td>Fernanda</td>
+                            <td>Rosas</td>
+                            <td>Gutiérrez</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202055945</td>
+                            <td>Eknaen</td>
+                            <td>Ruíz</td>
+                            <td>Enríquez</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                        <tr>
+                            <td>202146381</td>
+                            <td>Oscar Jorge</td>
+                            <td>Pérez</td>
+                            <td>Nuñez</td>
+                            <td>Urbanismo</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Tabla cooperación</h2>
+                <p>
+                La siguiente tabla buscar recuperar datos para la cooperación de la kermés de la Facultad de Arquitectura en la BUAP. Son exclusivos para su uso dentro de la dirección y comité del evento, por lo que se pide confidencialidad de estos. 
+                </p>
+                <table id="tabla2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;">Nombre</th>
+                            <th style="width: 150px;">Edad</th>
+                            <th style="width: 200px;" colspan="2">Teléfono</th>
+                            <th style="width: 150px;">Cooperación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left; padding: 3px;">Gerardo Velázquez Cruz</td>
+                            <td>15</td>
+                            <td class="celda_derecha" style="background-color: #F7F1E1;">2233638104</td>
+                            <td>2221076544</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left; padding: 3px;">Paola Rivera Méndez</td>
+                            <td>17</td>
+                            <td class="celda_derecha" style="background-color: #F7F1E1;">2221121016</td>
+                            <td>2221076544</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left; padding: 3px;">María Luisa Morales Vega</td>
+                            <td>16</td>
+                            <td class="celda_derecha" style="background-color: #F7F1E1;">2255432322</td>
+                            <td>2221076544</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left; padding: 3px;">Francisco Rojas de la Rosa</td>
+                            <td>15</td>
+                            <td class="celda_derecha" style="background-color: #F7F1E1;">2224816343</td>
+                            <td>2221076544</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: right;">TOTAL</td>
+                            <td style="background-color: #855E6E; color: #F7F1E1;">335</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Tabla deportes</h2>
+                <p>
+                La siguiente tabla buscar recuperar datos para la apertura de nuevos deportes a abrir en la Facultad de Arquitectura en la BUAP. Son exclusivos para su uso dentro de la investigación por lo que se pide confidencialidad de estos. 
+                </p>
+                <table id="tabla_zebra">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María Pérez Pérez</td>
+                            <td>18</td>
+                            <td>Bascketball</td>
+                            <td>2226845301</td>
+                            <td>m.perez@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Muñoz Hernández</td>
+                            <td>20</td>
+                            <td>Football</td>
+                            <td>2265874103</td>
+                            <td>pedro_m02@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Gómez López</td>
+                            <td>20</td>
+                            <td>Volleyball</td>
+                            <td>2226958973</td>
+                            <td>paco.gl20@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Fernanda Alvarado Juárez</td>
+                            <td>19</td>
+                            <td>Baseball</td>
+                            <td>2229754841</td>
+                            <td>fer_alva@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Luis Ramos Paredes</td>
+                            <td>21</td>
+                            <td>Hockey</td>
+                            <td>2254931664</td>
+                            <td>luis_66rp@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ana López López</td>
+                            <td>20</td>
+                            <td>Karate</td>
+                            <td>2213485219</td>
+                            <td>emoxita@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfooter></tfooter>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Tabla correos</h2>
+                <p>
+                La siguiente tabla buscar recuperar datos para la investigación de la Facultad de Arquitectura en la BUAP. Son exclusivos para su uso dentro de la investigación por lo que se pide confidencialidad de estos. 
+                </p>
+                <table id="" class="tabla_hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María Pérez Pérez</td>
+                            <td>18</td>
+                            <td>Bascketball</td>
+                            <td>2226845301</td>
+                            <td>m.perez@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Muñoz Hernández</td>
+                            <td>20</td>
+                            <td>Football</td>
+                            <td>2265874103</td>
+                            <td>pedro_m02@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Gómez López</td>
+                            <td>20</td>
+                            <td>Volleyball</td>
+                            <td>2226958973</td>
+                            <td>paco.gl20@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Fernanda Alvarado Juárez</td>
+                            <td>19</td>
+                            <td>Baseball</td>
+                            <td>2229754841</td>
+                            <td>fer_alva@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Luis Ramos Paredes</td>
+                            <td>21</td>
+                            <td>Hockey</td>
+                            <td>2254931664</td>
+                            <td>luis_66rp@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Ana López López</td>
+                            <td>20</td>
+                            <td>Karate</td>
+                            <td>2213485219</td>
+                            <td>emoxita@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfooter></tfooter>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por Diana Karen Torres Márquez</h5>
+        </footer>
+    </body>
+</html>

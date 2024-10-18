@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header,nav,main,footer{
+    /*width: 960px;*/
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    height: 100px;
+    background-color: #CE7095;
+    color: #F7F1E1;
+}
+body{
+    background-color: #855E6E;
+}
+section{
+    width: 80%;
+    background-color: #F7F1E1;
+    color: #855E6E;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+main{
+    background-color: #FFDBD7;
+    height: auto;
+    padding: 80px;
+}
+nav{
+    height: 50px;
+    background-color: #FFDBD7;
+}
+footer{
+    height: 50px;
+    background-color: #FFB2C1;
+}
+h1,h5{
+    text-align: center;
+}
+h5{
+    color: #855E6E;
+}
+ul{
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+    width: 10%;
+    padding: 12px;
+    background-color: #855E6E;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #CE7095;
+    text-decoration: none;
+    font-family: "Afacad Flux";
+    font-size: 16px;
+}
+nav ul li:hover{
+    background-color: #F7F1E1;
+    text-decoration: none;
+    font-weight: bold;
+    color: #855E6E;
+}
+nav ul li a:hover{
+    color: #855E6E;
+}
+nav ul li a{
+        text-decoration: none;
+        color: #F7F1E1;
+}
+img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+h1{
+    font-family: "Bebas Neue";
+    font-size: 50px;
+}
+h2,p{
+    color: #855E6E;
+}
+h2{
+    margin-bottom: 30px;
+    font-family: "Open Sans";
+    font-size: 24px;
+}
+h5{
+	font-family: "Afacad Flux";
+    font-size: 12px;
+}
+#estrella{
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+}
+#corazon{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+main nav{
+    width: 600px;
+    padding: 30px;
+}
+#icono{
+    width: 32px;
+    height: auto;
+}
+p{
+    margin: 10px;
+    font-family: "Afacad Flux";
+    font-size: 16px;
+}
+#fondo_section{
+    background-image: url("../medios/imagenes/paisaje.JPG");
+    background-repeat: no-repeat;
+}
+#fondo_section p, #fondo_section h2{
+    color: #F7F1E1;
+}
+#filtros_imagen{
+    text-align: center;
+}
+#filtros_imagen img{
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    padding: 5px;
+}
+#img1{
+    filter:brightness(200%);
+}
+#img2{
+    filter: contrast(150%);
+}
+#img3{
+    filter: grayscale(100%);
+}
+#img4{
+    filter: invert(100%);
+}
+#img5{
+    filter: opacity(50%);
+}
+#img6{
+    filter: sepia(100%);
+}
+#img7{
+    filter: saturate(280%);
+}
+#img8{
+    filter: blur(3px);
+}
+#img9{
+    filter: drop-shadow(10px 10px 20px red);
+}
+#img10{
+    filter: sepia(80%) blur(2px);
+}
+#img11{
+    filter: hue-rotate(70deg);
+}
+iframe, audio{
+    display: block;
+    margin: 0 auto;
+}
+#menu_interno{
+	width: 110%;
+	text-align: center;
+}
